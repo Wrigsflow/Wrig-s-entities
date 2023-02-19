@@ -1,0 +1,350 @@
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "k" then
+                        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+ 
+    local entity = Creator.createEntity({
+        Model = "https://github.com/Wrigsflow/Slashers/blob/main/Slashesr.rbxm?raw=true",
+        Speed = 110,
+        DelayTime = 7,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = false,
+        FlickerLights = {
+            true,
+            5,
+        },
+        Cycles = {
+            Min = 3,
+            Max = 3,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {2, 15, 0.1, 1},
+            100,
+        },
+    })
+ 
+    Creator.runEntity(entity)  --Type you code here
+ end
+end)
+
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "j" then
+                        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+ 
+    local entity = Creator.createEntity({
+        Model = "https://github.com/Wrigsflow/boundtorebound/blob/main/rebound%20new.rbxm?raw=true",
+        Speed = 45,
+        DelayTime = 3,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = false,
+        FlickerLights = {
+            false,
+            5,
+        },
+        Cycles = {
+            Min = 1,
+            Max = 1,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {2, 15, 0.1, 1},
+            100,
+        },
+    })
+ 
+    Creator.runEntity(entity) --Type you code here
+ end
+end)
+
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "h" then
+                        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+ 
+    local entity = Creator.createEntity({
+        Model = "https://github.com/Wrigsflow/Stray/blob/main/Strat.rbxm?raw=true",
+        Speed = 49.8,
+        DelayTime = 3,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = false,
+        FlickerLights = {
+            true,
+            5,
+        },
+        Cycles = {
+            Min = 1,
+            Max = 1,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {7, 15, 0.1, 1},
+            100,
+        },
+    })
+ 
+    Creator.runEntity(entity) --Type you code here
+ end
+end)
+
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "F" then
+                        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+ 
+    local entity = Creator.createEntity({
+        Model = "https://github.com/Wrigsflow/dasher-model-/blob/4bad108299088ce9f14e08e3401e6d48abb9350d/dasher.rbxm?raw=true",
+        Speed = 100,
+        DelayTime = 1,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = fase,
+        FlickerLights = {
+            true,
+            3,
+        },
+        Cycles = {
+            Min = 1,
+            Max = 1,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {5, 15, 0.1, 1},
+            100,
+        },
+    })
+ 
+    Creator.runEntity(entity) --Type you code here
+ end
+end)
+
+
+
+game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+ if key == "g" then
+                        local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+ 
+    local entity = Creator.createEntity({
+        Model = "https://github.com/Wrigsflow/test/blob/main/gdf.rbxm?raw=true",
+        Speed = 100,
+        DelayTime = 1,
+        HeightOffset = 0,
+        CanKill = false,
+        BreakLights = fase,
+        FlickerLights = {
+            true,
+            3,
+        },
+        Cycles = {
+            Min = 1,
+            Max = 1,
+            WaitTime = 2,
+        },
+        CamShake = {
+            true,
+            {5, 15, 0.1, 1},
+            100,
+        },
+    })
+ 
+    Creator.runEntity(entity) --Type you code here
+ end
+end)
+
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Howtoclosegui = Instance.new("TextLabel")
+local EchoG = Instance.new("TextLabel")
+local WRIGSENTITIES = Instance.new("TextLabel")
+local Oldentities = Instance.new("Frame")
+local Oldentities_2 = Instance.new("TextLabel")
+local DasherF = Instance.new("TextLabel")
+local Miscentities = Instance.new("Frame")
+local misc = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Rebound = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local StrayH = Instance.new("TextLabel")
+local Slasher = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Frame.Position = UDim2.new(0.0951029062, 0, 0.0286783036, 0)
+Frame.Size = UDim2.new(0, 175, 0, 475)
+Frame.Draggable = true
+Frame.Active = true
+
+Howtoclosegui.Name = "How to close gui"
+Howtoclosegui.Parent = Frame
+Howtoclosegui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Howtoclosegui.BackgroundTransparency = 1.000
+Howtoclosegui.Position = UDim2.new(0.147073627, 0, 0.922105253, 0)
+Howtoclosegui.Size = UDim2.new(0, 122, 0, 50)
+Howtoclosegui.Font = Enum.Font.SourceSans
+Howtoclosegui.Text = "RightShift to hide/show gui(s)"
+Howtoclosegui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Howtoclosegui.TextSize = 14.000
+
+EchoG.Name = "Echo G"
+EchoG.Parent = Frame
+EchoG.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EchoG.BackgroundTransparency = 0.700
+EchoG.Position = UDim2.new(0.0365323313, 0, 0.130526319, 0)
+EchoG.Size = UDim2.new(0, 160, 0, 50)
+EchoG.Font = Enum.Font.SourceSans
+EchoG.Text = "Echo (G) trash"
+EchoG.TextColor3 = Color3.fromRGB(0, 0, 0)
+EchoG.TextSize = 14.000
+
+WRIGSENTITIES.Name = "WRIGS ENTITIES"
+WRIGSENTITIES.Parent = Frame
+WRIGSENTITIES.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WRIGSENTITIES.BackgroundTransparency = 1.000
+WRIGSENTITIES.Position = UDim2.new(0.0399999991, 0, 0, 0)
+WRIGSENTITIES.Size = UDim2.new(0, 160, 0, 50)
+WRIGSENTITIES.Font = Enum.Font.SourceSans
+WRIGSENTITIES.Text = "WRIGS ENTITIES"
+WRIGSENTITIES.TextColor3 = Color3.fromRGB(186, 146, 1)
+WRIGSENTITIES.TextSize = 20.000
+
+Oldentities.Name = "Old entities"
+Oldentities.Parent = Frame
+Oldentities.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Oldentities.Position = UDim2.new(1.49142861, 0, 0, 0)
+Oldentities.Size = UDim2.new(0, 175, 0, 475)
+
+Oldentities_2.Name = "Old entities"
+Oldentities_2.Parent = Oldentities
+Oldentities_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Oldentities_2.BackgroundTransparency = 1.000
+Oldentities_2.Position = UDim2.new(0.037278913, 0, 0, 0)
+Oldentities_2.Size = UDim2.new(0, 160, 0, 50)
+Oldentities_2.Font = Enum.Font.SourceSans
+Oldentities_2.Text = "OLD ENTITIES"
+Oldentities_2.TextColor3 = Color3.fromRGB(186, 146, 1)
+Oldentities_2.TextSize = 20.000
+
+DasherF.Name = "Dasher (F)"
+DasherF.Parent = Oldentities
+DasherF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DasherF.BackgroundTransparency = 0.700
+DasherF.Position = UDim2.new(0.0365323313, 0, 0.130526319, 0)
+DasherF.Size = UDim2.new(0, 160, 0, 50)
+DasherF.Font = Enum.Font.SourceSans
+DasherF.Text = "Dasher (F)"
+DasherF.TextColor3 = Color3.fromRGB(0, 0, 0)
+DasherF.TextSize = 14.000
+
+Miscentities.Name = "Misc entities"
+Miscentities.Parent = Frame
+Miscentities.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+Miscentities.Position = UDim2.new(2.92571425, 0, 0, 0)
+Miscentities.Size = UDim2.new(0, 175, 0, 475)
+
+misc.Name = "misc"
+misc.Parent = Miscentities
+misc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+misc.BackgroundTransparency = 1.000
+misc.Position = UDim2.new(0.037278913, 0, 0, 0)
+misc.Size = UDim2.new(0, 160, 0, 50)
+misc.Font = Enum.Font.SourceSans
+misc.Text = "Misc"
+misc.TextColor3 = Color3.fromRGB(186, 146, 1)
+misc.TextSize = 20.000
+
+TextLabel.Parent = Miscentities
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0342857018, 0, 0.920000076, 0)
+TextLabel.Size = UDim2.new(0, 162, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "These entities aren't mine, I just recreated them"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 10.000
+
+Rebound.Name = "Rebound"
+Rebound.Parent = Miscentities
+Rebound.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rebound.BackgroundTransparency = 0.700
+Rebound.Position = UDim2.new(0.0422466174, 0, 0.130526334, 0)
+Rebound.Size = UDim2.new(0, 160, 0, 50)
+Rebound.Font = Enum.Font.SourceSans
+Rebound.Text = "Rebound (J)"
+Rebound.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rebound.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(-0.0742857158, 0, 0.894736826, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Script is a WIP!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+StrayH.Name = "Stray H"
+StrayH.Parent = Frame
+StrayH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StrayH.BackgroundTransparency = 0.700
+StrayH.Position = UDim2.new(0.0365323313, 0, 0.29052633, 0)
+StrayH.Size = UDim2.new(0, 160, 0, 50)
+StrayH.Font = Enum.Font.SourceSans
+StrayH.Text = "Stray (H)"
+StrayH.TextColor3 = Color3.fromRGB(0, 0, 0)
+StrayH.TextSize = 14.000
+
+Slasher.Name = "Slasher"
+Slasher.Parent = Frame
+Slasher.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Slasher.BackgroundTransparency = 0.700
+Slasher.Position = UDim2.new(0.0365323313, 0, 0.446315825, 0)
+Slasher.Size = UDim2.new(0, 160, 0, 50)
+Slasher.Font = Enum.Font.SourceSans
+Slasher.Text = "Slasher (K)"
+Slasher.TextColor3 = Color3.fromRGB(0, 0, 0)
+Slasher.TextSize = 14.000
+
+-- Scripts:
+
+local function GOWSTZ_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UserInputService = game:GetService(("UserInputService"))
+	
+	function onKeyPress(inputObject, gameProcessedEvent)
+		if not gameProcessedEvent then
+			if inputObject.KeyCode == Enum.KeyCode.RightShift then
+				if script.Parent.Visible == false then
+					script.Parent.Visible = true
+				else
+					script.Parent.Visible = false
+				end
+			end
+		end
+	end
+	
+	UserInputService.InputBegan:Connect(onKeyPress)
+end
+coroutine.wrap(GOWSTZ_fake_script)()
